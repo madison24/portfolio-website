@@ -3,5 +3,5 @@ This is a website with my portfolio that includes a home page, an about me page,
 
 ![screenshot of the project](./img/portfoliopage.png)
 
-## Link to live app
+### Link to live site
  [https://madison24.github.io/portfolio-website/](https://madison24.github.io/portfolio-website/) 
