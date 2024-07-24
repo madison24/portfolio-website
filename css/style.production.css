@@ -10,8 +10,25 @@ Fonts used
 Lato 100,400,700
 Poppins 100, 400, 700
  */
+:root {
+  --page-color: #fef2f2;
+  --mauve: #c76873;
+  --hot-pink: #f53163;
+  --pink: #ffa3b9;
+  --green: #56916e;
+  --page-color: #fef2f2;
+  --yellow: #edc655;
+  --orange: #f76414;
+  --light-mauve: #e0adb3;
+  --white: #ffffff;
+  --black-opacity: rgba(0, 0, 0, 0.3);
+  --hfontweight: 700;
+  --phitemWidthHeight: 50px;
+  --ppWidthHeight: 250px;
+  --center-margin: 0 auto;
+}
 * {
-  background-color: #fef2f2;
+  background-color: var(--page-color);
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -24,15 +41,15 @@ body {
 }
 h1 {
   font-size: 30px;
-  font-weight: 700;
+  font-weight: var(--hfontweight);
 }
 h2 {
   font-size: 24px;
-  font-weight: 700;
+  font-weight: var(--hfontweight);
 }
 h3 {
   font-size: 18px;
-  font-weight: 700;
+  font-weight: var(--hfontweight);
 }
 a {
   -webkit-transition: opacity 0.2s;
@@ -55,8 +72,8 @@ a:focus {
   -webkit-box-flex: 0;
   -ms-flex: 0 1 200px;
   flex: 0 1 200px;
-  height: 50px;
-  width: 50px;
+  height: var(--phitemWidthHeight);
+  width: var(--phitemWidthHeight);
 }
 .page-header .page-header__item:last-child {
   -webkit-box-flex: 1;
@@ -72,31 +89,31 @@ a:focus {
   margin-left: 15px;
 }
 .navigation-list__item {
-  color: #f53163;
+  color: var(--hot-pink);
 }
 .profile {
   max-width: 700px;
-  margin: 0 auto;
+  margin: var(--center-margin);
 }
 .profile__portrait {
   float: left;
-  width: 250px;
-  height: 250px;
+  width: var(--ppWidthHeight);
+  height: var(--ppWidthHeight);
   margin-right: 40px;
   border-radius: 50%;
 }
 .page-links {
   text-decoration: underline;
-  color: #56916e;
+  color: var(--green);
 }
 .about-me__container {
   max-width: 700px;
-  margin: 0 auto;
+  margin: var(--center-margin);
   text-align: center;
 }
 table {
   max-width: 700px;
-  margin: 0 auto;
+  margin: var(--center-margin);
 }
 .chicago {
   -webkit-box-pack: center;
@@ -108,18 +125,18 @@ table {
 }
 @-webkit-keyframes color-change {
   from {
-    fill: #edc655;
+    fill: var(--yellow);
   }
   to {
-    fill: #f76414;
+    fill: var(--orange);
   }
 }
 @keyframes color-change {
   from {
-    fill: #edc655;
+    fill: var(--yellow);
   }
   to {
-    fill: #f76414;
+    fill: var(--orange);
   }
 }
 #path100 {
@@ -138,25 +155,19 @@ table {
   margin: 20px;
   margin-right: 20px;
 }
-.grid__item {
-  background-color: #e0adb3;
-  text-align: center;
-}
-.grid__header {
-  background-color: #e0adb3;
-  text-align: center;
-}
+.grid__item,
+.grid__header,
 .grid__content {
-  background-color: #e0adb3;
+  background-color: var(--light-mauve);
   text-align: center;
 }
 .github-links {
-  color: #ffffff;
+  color: var(--white);
 }
 
 .contact {
   max-width: 700px;
-  margin: 0 auto;
+  margin: var(--center-margin);
   text-align: center;
 }
 form {
@@ -170,28 +181,16 @@ form {
   display: -ms-flexbox;
   display: flex;
 }
-button {
-  background-color: #c76873;
-  color: #ffffff;
-  border: none;
-  font-family: inherit;
-  text-decoration: none;
-  padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  -webkit-transition: opacity 0.2s;
-  -o-transition: opacity 0.2s;
-  transition: opacity 0.2s;
-}
+button,
 .button {
-  background-color: #c76873;
-  color: #ffffff;
+  background-color: var(--mauve);
+  color: var(--white);
   border: none;
   font-family: inherit;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  border-bottom: 2px solid var(--black-opacity);
   -webkit-transition: opacity 0.2s;
   -o-transition: opacity 0.2s;
   transition: opacity 0.2s;
@@ -242,7 +241,6 @@ button:focus,
   width: 400px;
   margin: 10px;
 }
-
 @media all and (max-width: 500px) {
   .grid {
     -ms-grid-columns: 1fr;
