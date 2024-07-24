@@ -214,6 +214,35 @@ button:focus,
   flex-direction: column;
   text-align: center;
 }
+
+.case-img {
+  height: 390px;
+  width: 600px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.case-head1 {
+  text-align: center;
+}
+
+.case-p1 {
+  text-align: center;
+}
+
+.case-back1 {
+  padding: 30px;
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.p-img {
+  width: 400px;
+  margin: 10px;
+}
+
 @media all and (max-width: 500px) {
   .grid {
     -ms-grid-columns: 1fr;
